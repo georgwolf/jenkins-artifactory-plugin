@@ -67,7 +67,7 @@ public class MavenBuild extends PackageManagerBuild {
 
     @Whitelisted
     public void deployer(Map<String, Object> deployerArguments) throws Exception {
-        setDeployer(deployerArguments, Arrays.asList("releaseRepo", "snapshotRepo", "server", "evenIfUnstable", "deployArtifacts", "includeEnvVars"));
+        setDeployer(deployerArguments, Arrays.asList("releaseRepo", "snapshotRepo", "server", "deployEvenIfUnstable", "deployArtifacts", "includeEnvVars"));
     }
 
     private Map<String, Object> getExecutionArguments(String pom, String goals, BuildInfo buildInfo) {
